@@ -32,6 +32,7 @@ Modelo de projeto em Python ultilizando micro web framework Flask, variáveis de
 
 Adicione o seguinte conteudo apos DocumentRoot /var/www/html
 
+````
 WSGIDaemonProcess flaskapp threads=5
 WSGIScriptAlias / /var/www/html/flaskapp/app.wsgi
 WSGIApplicationGroup %{GLOBAL}
@@ -41,9 +42,11 @@ WSGIApplicationGroup %{GLOBAL}
 	 Order deny,allow
 	 Allow from all
 </Directory>
+````
 
 ## JavaScript - Fetch
 
+````
 var myHeaders = new Headers();
 myHeaders.append("A-Api-Key", "asdewq321098");
 
@@ -57,3 +60,4 @@ fetch("127.0.0.1:5000", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
+````
