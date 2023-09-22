@@ -4,6 +4,14 @@ Modelo de projeto em Python ultilizando micro web framework Flask, variáveis de
 
 ## Install
 
+```cd ~```
+
+```git clone https://github.com/wdvlpr/flask-dotenv-postgres.git flaskapp```
+
+```cd ~/flaskapp```
+
+```sudo ln -sT ~/flaskapp /var/www/html/flaskapp```
+
 ```sudo apt-get install apache2```
 
 ```sudo apt-get install python3```
@@ -19,12 +27,6 @@ Modelo de projeto em Python ultilizando micro web framework Flask, variáveis de
 ```pip3 install python-dotenv```
 
 ```pip3 install psycopg2-binary```
-
-## Create
-
-```mkdir ~/flaskapp```
-
-```sudo ln -sT ~/flaskapp /var/www/html/flaskapp```
 
 ## Config
 
